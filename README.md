@@ -6,6 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/A4SAppDispatcherKit.svg?style=flat)](https://cocoapods.org/pods/A4SAppDispatcherKit)
 
 ## Example
+A service-oriented implementation of Application Delegate
+See link for more information: #LINK#
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
