@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'A4SAppDispatcherKit_Example' do
+  pod 'A4SAppDispatcherKit', :path => '../'
+
+  target 'A4SAppDispatcherKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
