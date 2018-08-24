@@ -1,0 +1,22 @@
+{
+  "name": "A4SAppDispatcherKit",
+  "version": "0.1.0",
+  "summary": "A short description of A4SAppDispatcherKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ArkadiYoskovitz/A4SAppDispatcherKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Arkadi Yoskovitz": "a4s.development@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ArkadiYoskovitz/A4SAppDispatcherKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "A4SAppDispatcherKit/Classes/**/*"
+}

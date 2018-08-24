@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4977996FF8E73738DB64BE1F /* Pods_A4SAppDispatcherKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED1A03225125090AC0E45BDC /* Pods_A4SAppDispatcherKit_Tests.framework */; };
+		5DE3A393213095F900612C4B /* A4SSupportedOrientationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE3A392213095F900612C4B /* A4SSupportedOrientationService.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,8 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FC9DAA49DD18ECCD597E9CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0FC9DAA49DD18ECCD597E9CE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		25F71790DFF1D47CE4021055 /* Pods-A4SAppDispatcherKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A4SAppDispatcherKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-A4SAppDispatcherKit_Example/Pods-A4SAppDispatcherKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5DE3A392213095F900612C4B /* A4SSupportedOrientationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A4SSupportedOrientationService.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* A4SAppDispatcherKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A4SAppDispatcherKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +45,9 @@
 		63EDF37C87786F67F542C1D1 /* Pods-A4SAppDispatcherKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A4SAppDispatcherKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A4SAppDispatcherKit_Example/Pods-A4SAppDispatcherKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6F0875291765F058DF17A63C /* Pods-A4SAppDispatcherKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A4SAppDispatcherKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A4SAppDispatcherKit_Tests/Pods-A4SAppDispatcherKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0F420EE2E707831D0546B4F /* Pods_A4SAppDispatcherKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A4SAppDispatcherKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B23689319026ADB0AFCD3289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B23689319026ADB0AFCD3289 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		DD3875C8280BB26DC70B678E /* Pods-A4SAppDispatcherKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A4SAppDispatcherKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-A4SAppDispatcherKit_Tests/Pods-A4SAppDispatcherKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E7153D0F278BB4270BAC91BA /* A4SAppDispatcherKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = A4SAppDispatcherKit.podspec; path = ../A4SAppDispatcherKit.podspec; sourceTree = "<group>"; };
+		E7153D0F278BB4270BAC91BA /* A4SAppDispatcherKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = A4SAppDispatcherKit.podspec; path = ../A4SAppDispatcherKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED1A03225125090AC0E45BDC /* Pods_A4SAppDispatcherKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A4SAppDispatcherKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5DE3A38F2130957000612C4B /* ApplicationManagment */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+			);
+			path = ApplicationManagment;
+			sourceTree = "<group>";
+		};
+		5DE3A3902130957800612C4B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5DE3A391213095D800612C4B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5DE3A392213095F900612C4B /* A4SSupportedOrientationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -104,8 +130,9 @@
 		607FACD21AFB9204008FA782 /* Example for A4SAppDispatcherKit */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				5DE3A391213095D800612C4B /* Services */,
+				5DE3A3902130957800612C4B /* Scenes */,
+				5DE3A38F2130957000612C4B /* ApplicationManagment */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -207,7 +234,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -323,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5DE3A393213095F900612C4B /* A4SSupportedOrientationService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,12 +405,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -430,12 +460,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -498,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6F0875291765F058DF17A63C /* Pods-A4SAppDispatcherKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD3875C8280BB26DC70B678E /* Pods-A4SAppDispatcherKit_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

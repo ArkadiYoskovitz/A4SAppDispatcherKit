@@ -1,0 +1,16 @@
+PODS:
+  - A4SAppDispatcherKit (0.1.0)
+
+DEPENDENCIES:
+  - A4SAppDispatcherKit (from `../`)
+
+EXTERNAL SOURCES:
+  A4SAppDispatcherKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  A4SAppDispatcherKit: 6e89e6d2a3216274e7c5319e7db45f0efac4a1c8
+
+PODFILE CHECKSUM: 773ab41c72ae9fe7fad1ac44066ba9eecba70d77
+
+COCOAPODS: 1.5.0
