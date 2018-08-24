@@ -36,14 +36,13 @@ open class A4SAppDelegateDispatcher : UIResponder {
                 return true
             }
             
-            // 03 Check if the selector is handled by our subclass, this is generally relavent only for
-            // if a selector is member of UIApplicationDelegate but not in _services array check for sub classers
-            // if let aSuperType = superclass , method(for: input) != aSuperType.instanceMethod(for: input)
+            // 03 Check if the selector is handled by our subclass
             if overridesSelector(input)
             {
                 return super.responds(to: input)
             }
             
+            // 04 Spesificly handle the window property, this is the only oprperty in the protocol
             if  input == #selector(getter: UIApplicationDelegate.window) ||
                 input == #selector(setter: UIApplicationDelegate.window)
             {

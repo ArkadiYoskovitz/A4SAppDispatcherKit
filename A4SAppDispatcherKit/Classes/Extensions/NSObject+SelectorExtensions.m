@@ -16,7 +16,7 @@
     BOOL  overridden = NO;
     
     while (aSuperType != nil) {
-        overridden = [self methodForSelector: aSelector] != [aSuperType instanceMethodForSelector: aSelector];
+        overridden = ([aSuperType instancesRespondToSelector:aSelector]) && ([self methodForSelector: aSelector] != [aSuperType instanceMethodForSelector: aSelector]);
         if (overridden) {
             break;
         }
