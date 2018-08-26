@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '8.0'
     
     s.source_files        = 'A4SAppDispatcherKit/Classes/**/*'
-    s.public_header_files = 'Pod/Classes/**/*.h'
+    s.public_header_files = 'A4SAppDispatcherKit/Classes/**/*.h'
     s.frameworks          = 'UIKit'
     
 
