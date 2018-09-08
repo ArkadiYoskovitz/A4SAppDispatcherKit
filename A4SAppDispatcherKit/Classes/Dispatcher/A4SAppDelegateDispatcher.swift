@@ -43,8 +43,8 @@ open class A4SAppDelegateDispatcher : UIResponder {
             }
             
             // 04 Spesificly handle the window property, this is the only oprperty in the protocol
-            if  input == #selector(getter: UIApplicationDelegate.window) ||
-                input == #selector(setter: UIApplicationDelegate.window)
+            if  sel_isEqual(input, #selector(getter: UIApplicationDelegate.window)) ||
+                sel_isEqual(input, #selector(setter: UIApplicationDelegate.window))
             {
                 return super.responds(to: input)
             }
