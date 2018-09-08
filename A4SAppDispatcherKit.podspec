@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     #   * Finally, don't worry about the indent, CocoaPods strips it!
     
     s.description      = <<-DESC
-    TODO: Add long description of the pod here.
+    A4SAppDispatcherKit allows the user to work with service based application delega§te while dynamicly telling the OS which methods the user actully uses, no more need for commenting out elements that aren't currently in use in your project
     DESC
     
     s.homepage         = 'https://github.com/ArkadiYoskovitz/A4SAppDispatcherKit'
