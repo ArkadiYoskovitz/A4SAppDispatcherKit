@@ -18,7 +18,7 @@ class Tests : XCTestCase {
             return [service]
         }
         
-        override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
             didFinishLaunchingCalled += 1
             return false
         }
@@ -29,12 +29,12 @@ class Tests : XCTestCase {
         var willFinishLaunchingCalled : Int = 0
         var  didFinishLaunchingCalled : Int = 0
         
-        func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             willFinishLaunchingCalled += 1
             return true
         }
         
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
             didFinishLaunchingCalled += 1
             return false
         }

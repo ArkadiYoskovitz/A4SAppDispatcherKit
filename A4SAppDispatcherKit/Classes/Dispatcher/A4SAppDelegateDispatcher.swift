@@ -8,6 +8,7 @@
 
 import UIKit
 import CloudKit
+import Intents
 
 open class A4SAppDelegateDispatcher : UIResponder {
     
@@ -66,7 +67,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
     }
     
     @available(iOS 6.0, *)
-    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    open func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         for service in _services {
             guard let serviceResult = service.application?(application, willFinishLaunchingWithOptions: launchOptions) else { continue }
             guard !serviceResult else { continue }
@@ -76,7 +77,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
     }
     
     @available(iOS 3.0, *)
-    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?) -> Bool {
         
         for service in _services {
             guard let serviceResult = service.application?(application, didFinishLaunchingWithOptions: launchOptions) else { continue }
@@ -124,7 +125,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
         return true
     }
     @available(iOS 9.0, *)
-    open func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+    open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
 
         for service in _services {
 
@@ -349,6 +350,14 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
         }
     }
     
+    @available(iOS 11.0, *)
+    open func application(_ application: UIApplication, handle intent: INIntent, completionHandler: @escaping (INIntentResponse) -> Void)
+    {
+        for service in _services {
+            service.application?(application, handle: intent, completionHandler: completionHandler)
+        }
+    }
+    
     @available(iOS 4.0, *)
     open func applicationDidEnterBackground(_ application: UIApplication) {
         
@@ -395,7 +404,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
     // Constants representing common extension point identifiers are provided further down.
     // If unimplemented, the default behavior is to allow the extension point identifier.
     @available(iOS 8.0, *)
-    open func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplicationExtensionPointIdentifier) -> Bool {
+    open func application(_ application: UIApplication, shouldAllowExtensionPointIdentifier extensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool {
         
         for service in _services {
             guard let serviceResult = service.application?(application, shouldAllowExtensionPointIdentifier: extensionPointIdentifier) else { continue }
@@ -406,7 +415,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
     }
     
     @available(iOS 6.0, *)
-    open func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [Any], coder: NSCoder) -> UIViewController? {
+    open func application(_ application: UIApplication, viewControllerWithRestorationIdentifierPath identifierComponents: [String], coder: NSCoder) -> UIViewController? {
         
         for service in _services {
             guard let viewController = service.application?(application, viewControllerWithRestorationIdentifierPath: identifierComponents, coder: coder) else { continue }
@@ -473,7 +482,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
     // invoked with the user activity. Invoking the restorationHandler is optional. It may be copied and invoked later, and it will bounce to the main thread to complete its work and call
     // restoreUserActivityState on all objects.
     @available(iOS 8.0, *)
-    open func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    open func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
 
         for service in _services {
             guard let serviceResult = service.application?(application, continue: userActivity, restorationHandler: restorationHandler) else { continue }
@@ -507,7 +516,7 @@ extension A4SAppDelegateDispatcher : UIApplicationDelegate {
     // You should use the CKShareMetadata object's shareURL and containerIdentifier to schedule a CKAcceptSharesOperation, then start using
     // the resulting CKShare and its associated record(s), which will appear in the CKContainer's shared database in a zone matching that of the record's owner.
     @available(iOS 10.0, *)
-    open func application(_ application: UIApplication, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShareMetadata) {
+    open func application(_ application: UIApplication, userDidAcceptCloudKitShareWith cloudKitShareMetadata: CKShare.Metadata) {
         
         for service in _services {
             service.application?(application, userDidAcceptCloudKitShareWith: cloudKitShareMetadata)

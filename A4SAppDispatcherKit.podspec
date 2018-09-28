@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     s.social_media_url = 'https://twitter.com/ArkadiYoskovitz'
     s.source           = { :git => 'https://github.com/ArkadiYoskovitz/A4SAppDispatcherKit.git', :tag => s.version.to_s }
     
-    s.swift_version    = '4.1'
+    s.swift_version    = '4.2'
     
     s.ios.deployment_target = '8.0'
     
