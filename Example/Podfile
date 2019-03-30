@@ -1,11 +1,14 @@
-use_frameworks!
+source 'https://github.com/CocoaPods/Specs.git'
 
-target 'A4SAppDispatcherKit_Example' do
-  pod 'A4SAppDispatcherKit', :path => '../'
+platform :ios, '9.0'
 
-  target 'A4SAppDispatcherKit_Tests' do
+target 'AFSAppDispatcherKit_Example' do
+  
+  use_frameworks!
+  
+  pod 'AFSAppDispatcherKit', :path => '../'
+
+  target 'AFSAppDispatcherKit_Tests' do
     inherit! :search_paths
-
-    
   end
 end

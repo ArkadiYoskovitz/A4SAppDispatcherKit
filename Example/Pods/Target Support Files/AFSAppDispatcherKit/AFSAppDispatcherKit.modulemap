@@ -1,0 +1,6 @@
+framework module AFSAppDispatcherKit {
+  umbrella header "AFSAppDispatcherKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

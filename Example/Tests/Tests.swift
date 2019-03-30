@@ -1,11 +1,11 @@
 import XCTest
-@testable import A4SAppDispatcherKit
+@testable import AFSAppDispatcherKit
 
 class Tests : XCTestCase {
     
     var sut : TestAppDelegate!
 
-    class TestAppDelegate : A4SAppDelegateDispatcher {
+    class TestAppDelegate : AFSAppDelegateDispatcher {
         
         var didFinishLaunchingCalled = 0
         let service : TestService
@@ -14,7 +14,7 @@ class Tests : XCTestCase {
             didFinishLaunchingCalled = 0
             service = TestService()
         }
-        override func obtainServices() -> [A4SAppDelegateService] {
+        override func obtainServices() -> [AFSAppDelegateService] {
             return [service]
         }
         
@@ -24,7 +24,7 @@ class Tests : XCTestCase {
         }
     }
 
-    class TestService : NSObject , A4SAppDelegateService {
+    class TestService : NSObject , AFSAppDelegateService {
     
         var willFinishLaunchingCalled : Int = 0
         var  didFinishLaunchingCalled : Int = 0

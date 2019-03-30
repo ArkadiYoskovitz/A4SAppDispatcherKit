@@ -7,491 +7,441 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17F33C96A7736CF92E5605ED6FA08223 /* A4SAppDispatcherKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D52649BC66CDEB813FD0200CABB2204 /* A4SAppDispatcherKit-dummy.m */; };
-		239400E3D04BBDE6C927DA28360A8278 /* A4SAppDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D9226F90A21BC06C894EF15275A51 /* A4SAppDelegateService.swift */; };
-		3AFB488A53FE2EACF5CD287F1853AD82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		423E03563E47050675A84E7DC0785655 /* A4SAppDelegateExtensionsSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF3B884B441BA98D463A11D1B9E2F7 /* A4SAppDelegateExtensionsSelector.swift */; };
-		5442C867BD5B5983734D17FE0FA22A0F /* Pods-A4SAppDispatcherKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6F1313F61A53E9DA9E95B5AE45B8F4 /* Pods-A4SAppDispatcherKit_Example-dummy.m */; };
-		5927E8F6BC5114D7B9B7FEF370D1C3CA /* NSObject+SelectorExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 23D2110F08C93969EA76D041DBDBF655 /* NSObject+SelectorExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5BC6CAC4931CA9388104E6B0AFF254FB /* NSObject+SelectorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B214B90608607C95FF84C2C1F69943D /* NSObject+SelectorExtensions.m */; };
-		6CE53E74C3C2820C3B49D68CE2D8847B /* Pods-A4SAppDispatcherKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 441D07C5F7700DC74F43CD044FAA3D6D /* Pods-A4SAppDispatcherKit_Tests-dummy.m */; };
-		8BBF5A19388EBC8D49E85F88BDED98A3 /* A4SAppDispatcherKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B395AC5994942D044DFF0FB88536DC /* A4SAppDispatcherKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B63FE3851A214111D54C1BC61753183D /* A4SAppDelegateDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A610868DE2F39A69C65ABD9F208690D /* A4SAppDelegateDispatcher.swift */; };
-		BB80E2DFF4DE241CD0BB70DAE7B12011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D4DD4AEDCE0211D2B1034BDFB5554312 /* Pods-A4SAppDispatcherKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5B2E0C54E70640C4B2356F9D60436AA /* Pods-A4SAppDispatcherKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D61E1892635123F13FDAB9E06ECBC658 /* Pods-A4SAppDispatcherKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF35215A95A8632F11C4C6745A1B4FC /* Pods-A4SAppDispatcherKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB49DC728EAE7B6E52BD9935C757D7BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		236CD8163F0A214641920D44E19DEDF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		24777F1CD771A56227CCEB4E47FE312B /* NSObject+SelectorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD00EF5CBD3EE0BFCC0DC38B2B39A57 /* NSObject+SelectorExtensions.m */; };
+		33DA749530B5BB391B1543A7569A171D /* Pods-AFSAppDispatcherKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B5F035DE07592B7C4CADB5A64235C0 /* Pods-AFSAppDispatcherKit_Tests-dummy.m */; };
+		429AC2D2F2218BF57CF40C4C86E0F9AF /* Pods-AFSAppDispatcherKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF9AB4D6BB0C26BCFD1D9D34806809C /* Pods-AFSAppDispatcherKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56F17B554E00D19A2BFE2CF1ECFCCB8B /* ExtensionsSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E4AF6555F4AEC799838DF607FD46A /* ExtensionsSelector.swift */; };
+		71139648EF3E5CB03E4E7C7FC60DC0FC /* Pods-AFSAppDispatcherKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D06A8FC6F9A10A9FC50A20E3BD63216A /* Pods-AFSAppDispatcherKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92E64894FE5B3894868E4533E66660BB /* NSObject+SelectorExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = B19DA970582FF5C664FE4FD1EDF95517 /* NSObject+SelectorExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E612CCE4530CAB11C8DFEAA2EB03DFC /* AFSAppDispatcherKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF45ADE353ECF23A12027F9756C56C4 /* AFSAppDispatcherKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A620F7A59ED5A701F296B538CE052621 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		AA983A6E7083F52E9140E5CB6A96E364 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
+		B3A524A3F64878D500B61E0B2B984E97 /* AFSAppDispatcherKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D773E6414F836820D38644E9C01D0CD1 /* AFSAppDispatcherKit-dummy.m */; };
+		BDDA9DA2844715FC3F1B540681E79C69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		E30B1C0DE80FADE0BF6E28306FEB7125 /* AFSAppDelegateDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E20A36478718186F3D1BF58F00EC65 /* AFSAppDelegateDispatcher.swift */; };
+		E82A33D0D1E50BEF75E54650AE1327A4 /* AFSAppDelegateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E4857AEF28066C27ABF087E8428C13 /* AFSAppDelegateService.swift */; };
+		F861651D7A36BB6ABFC87C9B7CE9435D /* Pods-AFSAppDispatcherKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2B7CD5043D64C985B927D22FF0F3B9 /* Pods-AFSAppDispatcherKit_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		17278B9A33A79F1DB04AD207E16F87EC /* PBXContainerItemProxy */ = {
+		335BB0717AA56DFCF7AEF17165B051CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FF8CCB6063351BBFAA32538A61409B5;
-			remoteInfo = A4SAppDispatcherKit;
+			remoteGlobalIDString = F8075FCD2511B902E2EA34217DD9408E;
+			remoteInfo = "Pods-AFSAppDispatcherKit_Example";
 		};
-		950672CA1ADBEACB355B32226825E823 /* PBXContainerItemProxy */ = {
+		AB77E1C21AAD039857B73BF982F5127B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8B9177BD0B18EB7849F0C170C62F7F37;
-			remoteInfo = "Pods-A4SAppDispatcherKit_Example";
+			remoteGlobalIDString = AD9F268A124413BD19ED6ACF7D753670;
+			remoteInfo = AFSAppDispatcherKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B395AC5994942D044DFF0FB88536DC /* A4SAppDispatcherKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "A4SAppDispatcherKit-umbrella.h"; sourceTree = "<group>"; };
-		112D9226F90A21BC06C894EF15275A51 /* A4SAppDelegateService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = A4SAppDelegateService.swift; sourceTree = "<group>"; };
-		162CE15CA6301A853FF77EB121435D6E /* Pods_A4SAppDispatcherKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A4SAppDispatcherKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B10816C1A809879ED44FDB79D356D33 /* Pods-A4SAppDispatcherKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-A4SAppDispatcherKit_Example-resources.sh"; sourceTree = "<group>"; };
-		22C8D8EBC9D5DB2AF53B7E795D013568 /* Pods-A4SAppDispatcherKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-A4SAppDispatcherKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		23D2110F08C93969EA76D041DBDBF655 /* NSObject+SelectorExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorExtensions.h"; sourceTree = "<group>"; };
-		2B11E844887FDF482C4E9364133F9437 /* A4SAppDispatcherKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = A4SAppDispatcherKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3694F2F1AA9A58A90D3877863ABD1027 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3A0BE034B33ABC1F178B7174FC2D94EC /* Pods-A4SAppDispatcherKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-A4SAppDispatcherKit_Tests.modulemap"; sourceTree = "<group>"; };
-		3A610868DE2F39A69C65ABD9F208690D /* A4SAppDelegateDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = A4SAppDelegateDispatcher.swift; sourceTree = "<group>"; };
-		3D57DB6C09B7DA7DAF47E244D6492BCC /* A4SAppDispatcherKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "A4SAppDispatcherKit-prefix.pch"; sourceTree = "<group>"; };
-		441D07C5F7700DC74F43CD044FAA3D6D /* Pods-A4SAppDispatcherKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-A4SAppDispatcherKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		4AF35215A95A8632F11C4C6745A1B4FC /* Pods-A4SAppDispatcherKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-A4SAppDispatcherKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		5B214B90608607C95FF84C2C1F69943D /* NSObject+SelectorExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorExtensions.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66892A7CDC6021F2384E831469BE6F47 /* Pods-A4SAppDispatcherKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-A4SAppDispatcherKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6CA979E6033A5F489189D82411686214 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D52649BC66CDEB813FD0200CABB2204 /* A4SAppDispatcherKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "A4SAppDispatcherKit-dummy.m"; sourceTree = "<group>"; };
-		6E7F5FB480430013E982D455FFEAD977 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F82E6DA7EC683B095209741EF45C183 /* Pods_A4SAppDispatcherKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A4SAppDispatcherKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73D9DB29733542737CAFB5370C2E0C80 /* Pods-A4SAppDispatcherKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-A4SAppDispatcherKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		877C14B406423B194EC7FCBB86193379 /* A4SAppDispatcherKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = A4SAppDispatcherKit.modulemap; sourceTree = "<group>"; };
-		916889AB828DAC1A469A018EDAE46B95 /* Pods-A4SAppDispatcherKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-A4SAppDispatcherKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		929AC6DD612C1D271EE9EF208EFCC71A /* Pods-A4SAppDispatcherKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-A4SAppDispatcherKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C2C331A20C2721AE8F1D1ACE19A6715 /* Pods-A4SAppDispatcherKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-A4SAppDispatcherKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9E5F9464C7F260E4A7A0CDD9BC8BE864 /* Pods-A4SAppDispatcherKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-A4SAppDispatcherKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		A5B2E0C54E70640C4B2356F9D60436AA /* Pods-A4SAppDispatcherKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-A4SAppDispatcherKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A5F5D2D670F26A346B28759FED373B73 /* Pods-A4SAppDispatcherKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-A4SAppDispatcherKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B5CF3B884B441BA98D463A11D1B9E2F7 /* A4SAppDelegateExtensionsSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = A4SAppDelegateExtensionsSelector.swift; sourceTree = "<group>"; };
-		BF17F85E1E516FEC721E01C06D7B25D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		BF95F0C4A0CE6B38868DEB2DA06D5049 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB6F1313F61A53E9DA9E95B5AE45B8F4 /* Pods-A4SAppDispatcherKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-A4SAppDispatcherKit_Example-dummy.m"; sourceTree = "<group>"; };
-		D72D8E392DAFB5C90FDC48E1FD69C901 /* A4SAppDispatcherKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = A4SAppDispatcherKit.xcconfig; sourceTree = "<group>"; };
-		E4E8A1163698DBE3F5B6F1C812CBB0CF /* Pods-A4SAppDispatcherKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-A4SAppDispatcherKit_Example.modulemap"; sourceTree = "<group>"; };
-		F3E3977961A2881EEC97DE43D7A26F25 /* Pods-A4SAppDispatcherKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-A4SAppDispatcherKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F7065519BF3F2C578590CFC8108A2EF3 /* A4SAppDispatcherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = A4SAppDispatcherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8DA9D0DD0395A177D7D532EB5C59CB9 /* Pods-A4SAppDispatcherKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-A4SAppDispatcherKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F99F690802F96DF05EE5FA55D34D280E /* Pods-A4SAppDispatcherKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-A4SAppDispatcherKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		0662B374AD96475D5B66B7EC0FB27581 /* Pods-AFSAppDispatcherKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AFSAppDispatcherKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		07FFE6201F444F92307BE41554A6085F /* Pods-AFSAppDispatcherKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AFSAppDispatcherKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		17CD25CEBDC299683A0C5EC781993C72 /* Pods-AFSAppDispatcherKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AFSAppDispatcherKit_Example-Info.plist"; sourceTree = "<group>"; };
+		2F6285AE7E2A3671AFEBF65151514535 /* Pods-AFSAppDispatcherKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFSAppDispatcherKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		301957BB3D066074966FC72BC27A2D8E /* AFSAppDispatcherKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFSAppDispatcherKit.xcconfig; sourceTree = "<group>"; };
+		3215D7DACB9DDDD5EDF204918F0AA2B3 /* AFSAppDispatcherKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFSAppDispatcherKit-Info.plist"; sourceTree = "<group>"; };
+		3EF45ADE353ECF23A12027F9756C56C4 /* AFSAppDispatcherKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFSAppDispatcherKit-umbrella.h"; sourceTree = "<group>"; };
+		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DF9AB4D6BB0C26BCFD1D9D34806809C /* Pods-AFSAppDispatcherKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFSAppDispatcherKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		5ECFC6C1F1E10C457FD3E8EAA70C61C9 /* Pods-AFSAppDispatcherKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AFSAppDispatcherKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6045417C41007D0D646DA7417AE564BC /* Pods-AFSAppDispatcherKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AFSAppDispatcherKit_Example.modulemap"; sourceTree = "<group>"; };
+		6CD00EF5CBD3EE0BFCC0DC38B2B39A57 /* NSObject+SelectorExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SelectorExtensions.m"; sourceTree = "<group>"; };
+		6CE82BDC5F3464AD45E5DF7BB0B3C44D /* Pods-AFSAppDispatcherKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AFSAppDispatcherKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71E4857AEF28066C27ABF087E8428C13 /* AFSAppDelegateService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AFSAppDelegateService.swift; sourceTree = "<group>"; };
+		784E4AF6555F4AEC799838DF607FD46A /* ExtensionsSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ExtensionsSelector.swift; sourceTree = "<group>"; };
+		88BBD885C1A8DCCA860E2414C2486379 /* AFSAppDispatcherKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AFSAppDispatcherKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8BB110B6FACD6634F66879F56A1641BE /* Pods-AFSAppDispatcherKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFSAppDispatcherKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9A328D83CF85726819A4D9B0CC464631 /* Pods-AFSAppDispatcherKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFSAppDispatcherKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0C1C5F17627BF6057629E7A6554EE61 /* Pods-AFSAppDispatcherKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AFSAppDispatcherKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		A918B314DB1D5E0F04BA8C5203327130 /* Pods-AFSAppDispatcherKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AFSAppDispatcherKit_Tests.modulemap"; sourceTree = "<group>"; };
+		AF99CF7AEC582E9BFE1783E5FCA023B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B19DA970582FF5C664FE4FD1EDF95517 /* NSObject+SelectorExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+SelectorExtensions.h"; sourceTree = "<group>"; };
+		B1B5F035DE07592B7C4CADB5A64235C0 /* Pods-AFSAppDispatcherKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFSAppDispatcherKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		B8D9140EEA0D86F52E8EE81629C282F1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B959E32D01F7E4B27DD9248861DAC23E /* AFSAppDispatcherKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFSAppDispatcherKit.framework; path = AFSAppDispatcherKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32C68B6BEBBD8A4976E24F0AF065968 /* AFSAppDispatcherKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFSAppDispatcherKit-prefix.pch"; sourceTree = "<group>"; };
+		C5EE204B7EA0FE66E513D9E88D83A64B /* Pods_AFSAppDispatcherKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AFSAppDispatcherKit_Tests.framework; path = "Pods-AFSAppDispatcherKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2B7CD5043D64C985B927D22FF0F3B9 /* Pods-AFSAppDispatcherKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AFSAppDispatcherKit_Example-dummy.m"; sourceTree = "<group>"; };
+		D06A8FC6F9A10A9FC50A20E3BD63216A /* Pods-AFSAppDispatcherKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AFSAppDispatcherKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		D1BF25FAC0309F2FB29073E117394753 /* Pods-AFSAppDispatcherKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AFSAppDispatcherKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D773E6414F836820D38644E9C01D0CD1 /* AFSAppDispatcherKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFSAppDispatcherKit-dummy.m"; sourceTree = "<group>"; };
+		D8E20A36478718186F3D1BF58F00EC65 /* AFSAppDelegateDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AFSAppDelegateDispatcher.swift; sourceTree = "<group>"; };
+		DD9ED19042DF2FF693AABB3513C4213E /* Pods-AFSAppDispatcherKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AFSAppDispatcherKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F3E7E00F90E29729422C4D17DACBC758 /* AFSAppDispatcherKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFSAppDispatcherKit.modulemap; sourceTree = "<group>"; };
+		F9BE39FA2FB5B0C846DF64216882D768 /* Pods_AFSAppDispatcherKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AFSAppDispatcherKit_Example.framework; path = "Pods-AFSAppDispatcherKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		12E617C804B69F79A69EEE5DE41D5E6E /* Frameworks */ = {
+		80EB1F26252E8647913DD875A9E75930 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFB488A53FE2EACF5CD287F1853AD82 /* Foundation.framework in Frameworks */,
+				236CD8163F0A214641920D44E19DEDF9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5862A32997095B189516EF8FFABBF2F3 /* Frameworks */ = {
+		8694C20948FC239BFD306144B3C8A05A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB80E2DFF4DE241CD0BB70DAE7B12011 /* Foundation.framework in Frameworks */,
+				A620F7A59ED5A701F296B538CE052621 /* Foundation.framework in Frameworks */,
+				AA983A6E7083F52E9140E5CB6A96E364 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E84A17719195AF8F9D691EBA0E41EEC /* Frameworks */ = {
+		8F4F70275A97E622FAAD4E14F4C7F1E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB49DC728EAE7B6E52BD9935C757D7BA /* Foundation.framework in Frameworks */,
+				BDDA9DA2844715FC3F1B540681E79C69 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35A92FBAD1796E8917FF3CBA27A828FA /* Dispatcher */ = {
+		0284AEE08849E3DB2F4AE9FCA30F93AC /* Pods-AFSAppDispatcherKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3A610868DE2F39A69C65ABD9F208690D /* A4SAppDelegateDispatcher.swift */,
-				112D9226F90A21BC06C894EF15275A51 /* A4SAppDelegateService.swift */,
+				A918B314DB1D5E0F04BA8C5203327130 /* Pods-AFSAppDispatcherKit_Tests.modulemap */,
+				6CE82BDC5F3464AD45E5DF7BB0B3C44D /* Pods-AFSAppDispatcherKit_Tests-acknowledgements.markdown */,
+				D1BF25FAC0309F2FB29073E117394753 /* Pods-AFSAppDispatcherKit_Tests-acknowledgements.plist */,
+				B1B5F035DE07592B7C4CADB5A64235C0 /* Pods-AFSAppDispatcherKit_Tests-dummy.m */,
+				0662B374AD96475D5B66B7EC0FB27581 /* Pods-AFSAppDispatcherKit_Tests-Info.plist */,
+				4DF9AB4D6BB0C26BCFD1D9D34806809C /* Pods-AFSAppDispatcherKit_Tests-umbrella.h */,
+				9A328D83CF85726819A4D9B0CC464631 /* Pods-AFSAppDispatcherKit_Tests.debug.xcconfig */,
+				8BB110B6FACD6634F66879F56A1641BE /* Pods-AFSAppDispatcherKit_Tests.release.xcconfig */,
 			);
-			name = Dispatcher;
-			path = A4SAppDispatcherKit/Classes/Dispatcher;
+			name = "Pods-AFSAppDispatcherKit_Tests";
+			path = "Target Support Files/Pods-AFSAppDispatcherKit_Tests";
 			sourceTree = "<group>";
 		};
-		3EEBD46413FC6E2F9A48053A537358FA /* Development Pods */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E420F50CC04B17577437BB5DF88B201A /* A4SAppDispatcherKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		43BDBF89090FDBB5ED4DE12C900EEDC8 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DFF5825C3895E6100DD8D3B5F1D5D942 /* Pods-A4SAppDispatcherKit_Example */,
-				89ABC74083803D2740E5E3795A13C350 /* Pods-A4SAppDispatcherKit_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		4C212DF79416E544770CF87512F08435 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				877C14B406423B194EC7FCBB86193379 /* A4SAppDispatcherKit.modulemap */,
-				D72D8E392DAFB5C90FDC48E1FD69C901 /* A4SAppDispatcherKit.xcconfig */,
-				6D52649BC66CDEB813FD0200CABB2204 /* A4SAppDispatcherKit-dummy.m */,
-				3D57DB6C09B7DA7DAF47E244D6492BCC /* A4SAppDispatcherKit-prefix.pch */,
-				03B395AC5994942D044DFF0FB88536DC /* A4SAppDispatcherKit-umbrella.h */,
-				6E7F5FB480430013E982D455FFEAD977 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/A4SAppDispatcherKit";
-			sourceTree = "<group>";
-		};
-		5267F16C795C0894FA9A1F2B32E341E8 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B5CF3B884B441BA98D463A11D1B9E2F7 /* A4SAppDelegateExtensionsSelector.swift */,
-				23D2110F08C93969EA76D041DBDBF655 /* NSObject+SelectorExtensions.h */,
-				5B214B90608607C95FF84C2C1F69943D /* NSObject+SelectorExtensions.m */,
-			);
-			name = Extensions;
-			path = A4SAppDispatcherKit/Classes/Extensions;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3EEBD46413FC6E2F9A48053A537358FA /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				F074BAE7CF732BE330DEE1CFA953AE0C /* Products */,
-				43BDBF89090FDBB5ED4DE12C900EEDC8 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		89ABC74083803D2740E5E3795A13C350 /* Pods-A4SAppDispatcherKit_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6CA979E6033A5F489189D82411686214 /* Info.plist */,
-				3A0BE034B33ABC1F178B7174FC2D94EC /* Pods-A4SAppDispatcherKit_Tests.modulemap */,
-				929AC6DD612C1D271EE9EF208EFCC71A /* Pods-A4SAppDispatcherKit_Tests-acknowledgements.markdown */,
-				66892A7CDC6021F2384E831469BE6F47 /* Pods-A4SAppDispatcherKit_Tests-acknowledgements.plist */,
-				441D07C5F7700DC74F43CD044FAA3D6D /* Pods-A4SAppDispatcherKit_Tests-dummy.m */,
-				9E5F9464C7F260E4A7A0CDD9BC8BE864 /* Pods-A4SAppDispatcherKit_Tests-frameworks.sh */,
-				F99F690802F96DF05EE5FA55D34D280E /* Pods-A4SAppDispatcherKit_Tests-resources.sh */,
-				A5B2E0C54E70640C4B2356F9D60436AA /* Pods-A4SAppDispatcherKit_Tests-umbrella.h */,
-				F3E3977961A2881EEC97DE43D7A26F25 /* Pods-A4SAppDispatcherKit_Tests.debug.xcconfig */,
-				73D9DB29733542737CAFB5370C2E0C80 /* Pods-A4SAppDispatcherKit_Tests.release.xcconfig */,
-			);
-			name = "Pods-A4SAppDispatcherKit_Tests";
-			path = "Target Support Files/Pods-A4SAppDispatcherKit_Tests";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BCB209BEB9716865CEB0F1728F8AE021 /* Pod */ = {
+		4AC2D577DE3DE34339F4F5C480E2A609 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2B11E844887FDF482C4E9364133F9437 /* A4SAppDispatcherKit.podspec */,
-				3694F2F1AA9A58A90D3877863ABD1027 /* LICENSE */,
-				BF17F85E1E516FEC721E01C06D7B25D0 /* README.md */,
+				FCB39122A2893E74C26C788595DF2DE6 /* AFSAppDispatcherKit */,
 			);
-			name = Pod;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		57D2D8C905493C827B91251787367B32 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				9009FF09D8F242B76F7CAD7525EDC266 /* Pods-AFSAppDispatcherKit_Example */,
+				0284AEE08849E3DB2F4AE9FCA30F93AC /* Pods-AFSAppDispatcherKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		74F381ED8D2248574A72B0BBAF8F2901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B959E32D01F7E4B27DD9248861DAC23E /* AFSAppDispatcherKit.framework */,
+				F9BE39FA2FB5B0C846DF64216882D768 /* Pods_AFSAppDispatcherKit_Example.framework */,
+				C5EE204B7EA0FE66E513D9E88D83A64B /* Pods_AFSAppDispatcherKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E826AFB1BE67A9DD5C4B9333028CA27 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				784E4AF6555F4AEC799838DF607FD46A /* ExtensionsSelector.swift */,
+				B19DA970582FF5C664FE4FD1EDF95517 /* NSObject+SelectorExtensions.h */,
+				6CD00EF5CBD3EE0BFCC0DC38B2B39A57 /* NSObject+SelectorExtensions.m */,
+			);
+			name = Extensions;
+			path = AFSAppDispatcherKit/Code/Extensions;
+			sourceTree = "<group>";
+		};
+		9009FF09D8F242B76F7CAD7525EDC266 /* Pods-AFSAppDispatcherKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6045417C41007D0D646DA7417AE564BC /* Pods-AFSAppDispatcherKit_Example.modulemap */,
+				5ECFC6C1F1E10C457FD3E8EAA70C61C9 /* Pods-AFSAppDispatcherKit_Example-acknowledgements.markdown */,
+				07FFE6201F444F92307BE41554A6085F /* Pods-AFSAppDispatcherKit_Example-acknowledgements.plist */,
+				CE2B7CD5043D64C985B927D22FF0F3B9 /* Pods-AFSAppDispatcherKit_Example-dummy.m */,
+				A0C1C5F17627BF6057629E7A6554EE61 /* Pods-AFSAppDispatcherKit_Example-frameworks.sh */,
+				17CD25CEBDC299683A0C5EC781993C72 /* Pods-AFSAppDispatcherKit_Example-Info.plist */,
+				D06A8FC6F9A10A9FC50A20E3BD63216A /* Pods-AFSAppDispatcherKit_Example-umbrella.h */,
+				DD9ED19042DF2FF693AABB3513C4213E /* Pods-AFSAppDispatcherKit_Example.debug.xcconfig */,
+				2F6285AE7E2A3671AFEBF65151514535 /* Pods-AFSAppDispatcherKit_Example.release.xcconfig */,
+			);
+			name = "Pods-AFSAppDispatcherKit_Example";
+			path = "Target Support Files/Pods-AFSAppDispatcherKit_Example";
+			sourceTree = "<group>";
+		};
+		B050BC7C27955B23492777536923DAFD /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				D8E20A36478718186F3D1BF58F00EC65 /* AFSAppDelegateDispatcher.swift */,
+				71E4857AEF28066C27ABF087E8428C13 /* AFSAppDelegateService.swift */,
+			);
+			name = Dispatcher;
+			path = AFSAppDispatcherKit/Code/Dispatcher;
+			sourceTree = "<group>";
+		};
+		BA0A799E561B5092B22E239D70783B9C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3E7E00F90E29729422C4D17DACBC758 /* AFSAppDispatcherKit.modulemap */,
+				301957BB3D066074966FC72BC27A2D8E /* AFSAppDispatcherKit.xcconfig */,
+				D773E6414F836820D38644E9C01D0CD1 /* AFSAppDispatcherKit-dummy.m */,
+				3215D7DACB9DDDD5EDF204918F0AA2B3 /* AFSAppDispatcherKit-Info.plist */,
+				C32C68B6BEBBD8A4976E24F0AF065968 /* AFSAppDispatcherKit-prefix.pch */,
+				3EF45ADE353ECF23A12027F9756C56C4 /* AFSAppDispatcherKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AFSAppDispatcherKit";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4AC2D577DE3DE34339F4F5C480E2A609 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				74F381ED8D2248574A72B0BBAF8F2901 /* Products */,
+				57D2D8C905493C827B91251787367B32 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */,
+				ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DFF5825C3895E6100DD8D3B5F1D5D942 /* Pods-A4SAppDispatcherKit_Example */ = {
+		E51F70EB566FAA9642036527B681D81E /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				BF95F0C4A0CE6B38868DEB2DA06D5049 /* Info.plist */,
-				E4E8A1163698DBE3F5B6F1C812CBB0CF /* Pods-A4SAppDispatcherKit_Example.modulemap */,
-				9C2C331A20C2721AE8F1D1ACE19A6715 /* Pods-A4SAppDispatcherKit_Example-acknowledgements.markdown */,
-				22C8D8EBC9D5DB2AF53B7E795D013568 /* Pods-A4SAppDispatcherKit_Example-acknowledgements.plist */,
-				CB6F1313F61A53E9DA9E95B5AE45B8F4 /* Pods-A4SAppDispatcherKit_Example-dummy.m */,
-				A5F5D2D670F26A346B28759FED373B73 /* Pods-A4SAppDispatcherKit_Example-frameworks.sh */,
-				1B10816C1A809879ED44FDB79D356D33 /* Pods-A4SAppDispatcherKit_Example-resources.sh */,
-				4AF35215A95A8632F11C4C6745A1B4FC /* Pods-A4SAppDispatcherKit_Example-umbrella.h */,
-				F8DA9D0DD0395A177D7D532EB5C59CB9 /* Pods-A4SAppDispatcherKit_Example.debug.xcconfig */,
-				916889AB828DAC1A469A018EDAE46B95 /* Pods-A4SAppDispatcherKit_Example.release.xcconfig */,
+				88BBD885C1A8DCCA860E2414C2486379 /* AFSAppDispatcherKit.podspec */,
+				B8D9140EEA0D86F52E8EE81629C282F1 /* LICENSE */,
+				AF99CF7AEC582E9BFE1783E5FCA023B2 /* README.md */,
 			);
-			name = "Pods-A4SAppDispatcherKit_Example";
-			path = "Target Support Files/Pods-A4SAppDispatcherKit_Example";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		E420F50CC04B17577437BB5DF88B201A /* A4SAppDispatcherKit */ = {
+		FCB39122A2893E74C26C788595DF2DE6 /* AFSAppDispatcherKit */ = {
 			isa = PBXGroup;
 			children = (
-				35A92FBAD1796E8917FF3CBA27A828FA /* Dispatcher */,
-				5267F16C795C0894FA9A1F2B32E341E8 /* Extensions */,
-				BCB209BEB9716865CEB0F1728F8AE021 /* Pod */,
-				4C212DF79416E544770CF87512F08435 /* Support Files */,
+				B050BC7C27955B23492777536923DAFD /* Dispatcher */,
+				8E826AFB1BE67A9DD5C4B9333028CA27 /* Extensions */,
+				E51F70EB566FAA9642036527B681D81E /* Pod */,
+				BA0A799E561B5092B22E239D70783B9C /* Support Files */,
 			);
-			name = A4SAppDispatcherKit;
+			name = AFSAppDispatcherKit;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		F074BAE7CF732BE330DEE1CFA953AE0C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F7065519BF3F2C578590CFC8108A2EF3 /* A4SAppDispatcherKit.framework */,
-				162CE15CA6301A853FF77EB121435D6E /* Pods_A4SAppDispatcherKit_Example.framework */,
-				6F82E6DA7EC683B095209741EF45C183 /* Pods_A4SAppDispatcherKit_Tests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		027D305734EB514E357937E0425568EB /* Headers */ = {
+		3A4A60A9483824C8F33D83C4940B30D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BBF5A19388EBC8D49E85F88BDED98A3 /* A4SAppDispatcherKit-umbrella.h in Headers */,
-				5927E8F6BC5114D7B9B7FEF370D1C3CA /* NSObject+SelectorExtensions.h in Headers */,
+				429AC2D2F2218BF57CF40C4C86E0F9AF /* Pods-AFSAppDispatcherKit_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EAF737E6FB9A0F6F6121BA09C3C8BED /* Headers */ = {
+		77F3AE1C8A3CD3B1D53C58610A84C580 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4DD4AEDCE0211D2B1034BDFB5554312 /* Pods-A4SAppDispatcherKit_Tests-umbrella.h in Headers */,
+				9E612CCE4530CAB11C8DFEAA2EB03DFC /* AFSAppDispatcherKit-umbrella.h in Headers */,
+				92E64894FE5B3894868E4533E66660BB /* NSObject+SelectorExtensions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF62563F048F1B6F487A92C1D6B6DA03 /* Headers */ = {
+		C642F930C28554033D801AD62A6C7047 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D61E1892635123F13FDAB9E06ECBC658 /* Pods-A4SAppDispatcherKit_Example-umbrella.h in Headers */,
+				71139648EF3E5CB03E4E7C7FC60DC0FC /* Pods-AFSAppDispatcherKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3C099CCE6F93D9DBA7C89D69F1DD7497 /* Pods-A4SAppDispatcherKit_Tests */ = {
+		5E986635B4C1149CB26C75984D1EE5A7 /* Pods-AFSAppDispatcherKit_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC5884E069F79FD3B4D69245FA2794BE /* Build configuration list for PBXNativeTarget "Pods-A4SAppDispatcherKit_Tests" */;
+			buildConfigurationList = B7245A3952EA68685D8505D9D1F8280A /* Build configuration list for PBXNativeTarget "Pods-AFSAppDispatcherKit_Tests" */;
 			buildPhases = (
-				3427E556AA7210000E45D953CB24961D /* Sources */,
-				5862A32997095B189516EF8FFABBF2F3 /* Frameworks */,
-				0EAF737E6FB9A0F6F6121BA09C3C8BED /* Headers */,
+				3A4A60A9483824C8F33D83C4940B30D8 /* Headers */,
+				C26079DE8B041F1507E47183FA0D5AA9 /* Sources */,
+				80EB1F26252E8647913DD875A9E75930 /* Frameworks */,
+				2D350C1B8F7D115709A9739EAA885097 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				97659D8D42F6B7D7851CBA0AE65F235C /* PBXTargetDependency */,
+				8143596EC9985ED0D4F2CC06A4F345DA /* PBXTargetDependency */,
 			);
-			name = "Pods-A4SAppDispatcherKit_Tests";
-			productName = "Pods-A4SAppDispatcherKit_Tests";
-			productReference = 6F82E6DA7EC683B095209741EF45C183 /* Pods_A4SAppDispatcherKit_Tests.framework */;
+			name = "Pods-AFSAppDispatcherKit_Tests";
+			productName = "Pods-AFSAppDispatcherKit_Tests";
+			productReference = C5EE204B7EA0FE66E513D9E88D83A64B /* Pods_AFSAppDispatcherKit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8B9177BD0B18EB7849F0C170C62F7F37 /* Pods-A4SAppDispatcherKit_Example */ = {
+		AD9F268A124413BD19ED6ACF7D753670 /* AFSAppDispatcherKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58D99D819649C1381F0E89CFE7F90035 /* Build configuration list for PBXNativeTarget "Pods-A4SAppDispatcherKit_Example" */;
+			buildConfigurationList = B3496CE2E99825147D04D4855E9534C6 /* Build configuration list for PBXNativeTarget "AFSAppDispatcherKit" */;
 			buildPhases = (
-				2F663BD83ECA1AB31C231C2F143A9BE8 /* Sources */,
-				12E617C804B69F79A69EEE5DE41D5E6E /* Frameworks */,
-				CF62563F048F1B6F487A92C1D6B6DA03 /* Headers */,
+				77F3AE1C8A3CD3B1D53C58610A84C580 /* Headers */,
+				A40AF1153E5C9C505FB89F54822C36E5 /* Sources */,
+				8694C20948FC239BFD306144B3C8A05A /* Frameworks */,
+				0027608D47CEB16BB1EC605EE18F5581 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AF024A038F132FFD0D4999B22768BF7D /* PBXTargetDependency */,
 			);
-			name = "Pods-A4SAppDispatcherKit_Example";
-			productName = "Pods-A4SAppDispatcherKit_Example";
-			productReference = 162CE15CA6301A853FF77EB121435D6E /* Pods_A4SAppDispatcherKit_Example.framework */;
+			name = AFSAppDispatcherKit;
+			productName = AFSAppDispatcherKit;
+			productReference = B959E32D01F7E4B27DD9248861DAC23E /* AFSAppDispatcherKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9FF8CCB6063351BBFAA32538A61409B5 /* A4SAppDispatcherKit */ = {
+		F8075FCD2511B902E2EA34217DD9408E /* Pods-AFSAppDispatcherKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37AD05F49FD937B89F1180CFF78E31CD /* Build configuration list for PBXNativeTarget "A4SAppDispatcherKit" */;
+			buildConfigurationList = 81C9671856DA57EF53DB830363EDBAFE /* Build configuration list for PBXNativeTarget "Pods-AFSAppDispatcherKit_Example" */;
 			buildPhases = (
-				703C09459FB0B9092AC71E81738975D2 /* Sources */,
-				7E84A17719195AF8F9D691EBA0E41EEC /* Frameworks */,
-				027D305734EB514E357937E0425568EB /* Headers */,
+				C642F930C28554033D801AD62A6C7047 /* Headers */,
+				6ACD22E835C598D174699F6E5A0D1973 /* Sources */,
+				8F4F70275A97E622FAAD4E14F4C7F1E0 /* Frameworks */,
+				71F1C898AB1147C0E43A3A47EEB2BCD9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67D0609D70DF57E25C7ABEFFF2D280E0 /* PBXTargetDependency */,
 			);
-			name = A4SAppDispatcherKit;
-			productName = A4SAppDispatcherKit;
-			productReference = F7065519BF3F2C578590CFC8108A2EF3 /* A4SAppDispatcherKit.framework */;
+			name = "Pods-AFSAppDispatcherKit_Example";
+			productName = "Pods-AFSAppDispatcherKit_Example";
+			productReference = F9BE39FA2FB5B0C846DF64216882D768 /* Pods_AFSAppDispatcherKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0940;
-				TargetAttributes = {
-					9FF8CCB6063351BBFAA32538A61409B5 = {
-						LastSwiftMigration = 1000;
-					};
-				};
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F074BAE7CF732BE330DEE1CFA953AE0C /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 74F381ED8D2248574A72B0BBAF8F2901 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9FF8CCB6063351BBFAA32538A61409B5 /* A4SAppDispatcherKit */,
-				8B9177BD0B18EB7849F0C170C62F7F37 /* Pods-A4SAppDispatcherKit_Example */,
-				3C099CCE6F93D9DBA7C89D69F1DD7497 /* Pods-A4SAppDispatcherKit_Tests */,
+				AD9F268A124413BD19ED6ACF7D753670 /* AFSAppDispatcherKit */,
+				F8075FCD2511B902E2EA34217DD9408E /* Pods-AFSAppDispatcherKit_Example */,
+				5E986635B4C1149CB26C75984D1EE5A7 /* Pods-AFSAppDispatcherKit_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0027608D47CEB16BB1EC605EE18F5581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D350C1B8F7D115709A9739EAA885097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71F1C898AB1147C0E43A3A47EEB2BCD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2F663BD83ECA1AB31C231C2F143A9BE8 /* Sources */ = {
+		6ACD22E835C598D174699F6E5A0D1973 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5442C867BD5B5983734D17FE0FA22A0F /* Pods-A4SAppDispatcherKit_Example-dummy.m in Sources */,
+				F861651D7A36BB6ABFC87C9B7CE9435D /* Pods-AFSAppDispatcherKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3427E556AA7210000E45D953CB24961D /* Sources */ = {
+		A40AF1153E5C9C505FB89F54822C36E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CE53E74C3C2820C3B49D68CE2D8847B /* Pods-A4SAppDispatcherKit_Tests-dummy.m in Sources */,
+				E30B1C0DE80FADE0BF6E28306FEB7125 /* AFSAppDelegateDispatcher.swift in Sources */,
+				E82A33D0D1E50BEF75E54650AE1327A4 /* AFSAppDelegateService.swift in Sources */,
+				B3A524A3F64878D500B61E0B2B984E97 /* AFSAppDispatcherKit-dummy.m in Sources */,
+				56F17B554E00D19A2BFE2CF1ECFCCB8B /* ExtensionsSelector.swift in Sources */,
+				24777F1CD771A56227CCEB4E47FE312B /* NSObject+SelectorExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		703C09459FB0B9092AC71E81738975D2 /* Sources */ = {
+		C26079DE8B041F1507E47183FA0D5AA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63FE3851A214111D54C1BC61753183D /* A4SAppDelegateDispatcher.swift in Sources */,
-				423E03563E47050675A84E7DC0785655 /* A4SAppDelegateExtensionsSelector.swift in Sources */,
-				239400E3D04BBDE6C927DA28360A8278 /* A4SAppDelegateService.swift in Sources */,
-				17F33C96A7736CF92E5605ED6FA08223 /* A4SAppDispatcherKit-dummy.m in Sources */,
-				5BC6CAC4931CA9388104E6B0AFF254FB /* NSObject+SelectorExtensions.m in Sources */,
+				33DA749530B5BB391B1543A7569A171D /* Pods-AFSAppDispatcherKit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		97659D8D42F6B7D7851CBA0AE65F235C /* PBXTargetDependency */ = {
+		67D0609D70DF57E25C7ABEFFF2D280E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-A4SAppDispatcherKit_Example";
-			target = 8B9177BD0B18EB7849F0C170C62F7F37 /* Pods-A4SAppDispatcherKit_Example */;
-			targetProxy = 950672CA1ADBEACB355B32226825E823 /* PBXContainerItemProxy */;
+			name = AFSAppDispatcherKit;
+			target = AD9F268A124413BD19ED6ACF7D753670 /* AFSAppDispatcherKit */;
+			targetProxy = AB77E1C21AAD039857B73BF982F5127B /* PBXContainerItemProxy */;
 		};
-		AF024A038F132FFD0D4999B22768BF7D /* PBXTargetDependency */ = {
+		8143596EC9985ED0D4F2CC06A4F345DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = A4SAppDispatcherKit;
-			target = 9FF8CCB6063351BBFAA32538A61409B5 /* A4SAppDispatcherKit */;
-			targetProxy = 17278B9A33A79F1DB04AD207E16F87EC /* PBXContainerItemProxy */;
+			name = "Pods-AFSAppDispatcherKit_Example";
+			target = F8075FCD2511B902E2EA34217DD9408E /* Pods-AFSAppDispatcherKit_Example */;
+			targetProxy = 335BB0717AA56DFCF7AEF17165B051CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03E8B27D2B221B1A0A51A87168487B23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8DA9D0DD0395A177D7D532EB5C59CB9 /* Pods-A4SAppDispatcherKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Example/Pods-A4SAppDispatcherKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		36F9639DD458E4027B0A1D66B652671C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 916889AB828DAC1A469A018EDAE46B95 /* Pods-A4SAppDispatcherKit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Example/Pods-A4SAppDispatcherKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -523,8 +473,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -544,19 +492,56 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		9FE29C86F640F73EF620C0DD446AAF9F /* Release */ = {
+		09CA261FC128851A0B1453BF539120B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D72D8E392DAFB5C90FDC48E1FD69C901 /* A4SAppDispatcherKit.xcconfig */;
+			baseConfigurationReference = 2F6285AE7E2A3671AFEBF65151514535 /* Pods-AFSAppDispatcherKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Example/Pods-AFSAppDispatcherKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Example/Pods-AFSAppDispatcherKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		324CF33738B97A04281844C9BEC11212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301957BB3D066074966FC72BC27A2D8E /* AFSAppDispatcherKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -567,19 +552,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/A4SAppDispatcherKit/A4SAppDispatcherKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/A4SAppDispatcherKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFSAppDispatcherKit/AFSAppDispatcherKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFSAppDispatcherKit/AFSAppDispatcherKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/A4SAppDispatcherKit/A4SAppDispatcherKit.modulemap";
-				PRODUCT_MODULE_NAME = A4SAppDispatcherKit;
-				PRODUCT_NAME = A4SAppDispatcherKit;
+				MODULEMAP_FILE = "Target Support Files/AFSAppDispatcherKit/AFSAppDispatcherKit.modulemap";
+				PRODUCT_MODULE_NAME = AFSAppDispatcherKit;
+				PRODUCT_NAME = AFSAppDispatcherKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -587,7 +571,107 @@
 			};
 			name = Release;
 		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		41C062B0E238E6BCCAAB83AA9337800A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB110B6FACD6634F66879F56A1641BE /* Pods-AFSAppDispatcherKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Tests/Pods-AFSAppDispatcherKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Tests/Pods-AFSAppDispatcherKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4EA1491A1ADCE27062C8B3010C37D625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9ED19042DF2FF693AABB3513C4213E /* Pods-AFSAppDispatcherKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Example/Pods-AFSAppDispatcherKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Example/Pods-AFSAppDispatcherKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		60FDBA2655B6104EB5CE131E2F6EFFBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A328D83CF85726819A4D9B0CC464631 /* Pods-AFSAppDispatcherKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Tests/Pods-AFSAppDispatcherKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AFSAppDispatcherKit_Tests/Pods-AFSAppDispatcherKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -619,8 +703,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -637,52 +719,21 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B801904521D63DCDD8A3BDC1637B0C6D /* Release */ = {
+		D641DCFAD8CE87E32E01B1559CD0CCF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73D9DB29733542737CAFB5370C2E0C80 /* Pods-A4SAppDispatcherKit_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Tests/Pods-A4SAppDispatcherKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D6596EA427296E666046659B45C19C71 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D72D8E392DAFB5C90FDC48E1FD69C901 /* A4SAppDispatcherKit.xcconfig */;
+			baseConfigurationReference = 301957BB3D066074966FC72BC27A2D8E /* AFSAppDispatcherKit.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -693,52 +744,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/A4SAppDispatcherKit/A4SAppDispatcherKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/A4SAppDispatcherKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/AFSAppDispatcherKit/AFSAppDispatcherKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFSAppDispatcherKit/AFSAppDispatcherKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/A4SAppDispatcherKit/A4SAppDispatcherKit.modulemap";
-				PRODUCT_MODULE_NAME = A4SAppDispatcherKit;
-				PRODUCT_NAME = A4SAppDispatcherKit;
+				MODULEMAP_FILE = "Target Support Files/AFSAppDispatcherKit/AFSAppDispatcherKit.modulemap";
+				PRODUCT_MODULE_NAME = AFSAppDispatcherKit;
+				PRODUCT_NAME = AFSAppDispatcherKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FE44D341EE1A29A14F7B6D7A6C6E01D9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3E3977961A2881EEC97DE43D7A26F25 /* Pods-A4SAppDispatcherKit_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-A4SAppDispatcherKit_Tests/Pods-A4SAppDispatcherKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -748,43 +765,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37AD05F49FD937B89F1180CFF78E31CD /* Build configuration list for PBXNativeTarget "A4SAppDispatcherKit" */ = {
+		81C9671856DA57EF53DB830363EDBAFE /* Build configuration list for PBXNativeTarget "Pods-AFSAppDispatcherKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D6596EA427296E666046659B45C19C71 /* Debug */,
-				9FE29C86F640F73EF620C0DD446AAF9F /* Release */,
+				4EA1491A1ADCE27062C8B3010C37D625 /* Debug */,
+				09CA261FC128851A0B1453BF539120B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58D99D819649C1381F0E89CFE7F90035 /* Build configuration list for PBXNativeTarget "Pods-A4SAppDispatcherKit_Example" */ = {
+		B3496CE2E99825147D04D4855E9534C6 /* Build configuration list for PBXNativeTarget "AFSAppDispatcherKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03E8B27D2B221B1A0A51A87168487B23 /* Debug */,
-				36F9639DD458E4027B0A1D66B652671C /* Release */,
+				D641DCFAD8CE87E32E01B1559CD0CCF6 /* Debug */,
+				324CF33738B97A04281844C9BEC11212 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC5884E069F79FD3B4D69245FA2794BE /* Build configuration list for PBXNativeTarget "Pods-A4SAppDispatcherKit_Tests" */ = {
+		B7245A3952EA68685D8505D9D1F8280A /* Build configuration list for PBXNativeTarget "Pods-AFSAppDispatcherKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FE44D341EE1A29A14F7B6D7A6C6E01D9 /* Debug */,
-				B801904521D63DCDD8A3BDC1637B0C6D /* Release */,
+				60FDBA2655B6104EB5CE131E2F6EFFBE /* Debug */,
+				41C062B0E238E6BCCAAB83AA9337800A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
