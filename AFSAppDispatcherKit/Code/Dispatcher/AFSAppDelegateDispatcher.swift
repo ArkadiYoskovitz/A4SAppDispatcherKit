@@ -124,6 +124,7 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
         }
         return true
     }
+    
     @available(iOS 9.0, *)
     open func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
 
@@ -216,9 +217,11 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
             service.application?(application, didFailToRegisterForRemoteNotificationsWithError: error)
         }
     }
+    /////
     
+    /////
     @available(iOS, introduced: 3.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate willPresentNotification:withCompletionHandler:] or -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:] for user visible notifications and -[UIApplicationDelegate application:didReceiveRemoteNotification:fetchCompletionHandler:] for silent remote notifications")
-    open func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+    open func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         
         for service in _services {
             service.application?(application, didReceiveRemoteNotification: userInfo)
@@ -245,7 +248,7 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
     }
     
     @available(iOS, introduced: 9.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
-    open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable: Any], withResponseInfo responseInfo: [AnyHashable: Any], completionHandler: @escaping () -> Void) {
+    open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any], withResponseInfo responseInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
         
         for service in _services {
             service.application?(application, handleActionWithIdentifier: identifier, forRemoteNotification: userInfo, withResponseInfo: responseInfo, completionHandler: completionHandler)
@@ -256,7 +259,7 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
     // A nil action identifier indicates the default action.
     // You should call the completion handler as soon as you've finished handling the action.
     @available(iOS, introduced: 8.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
-    open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable: Any], completionHandler: @escaping () -> Void) {
+    open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
         
         for service in _services {
             service.application?(application, handleActionWithIdentifier: identifier, forRemoteNotification: userInfo, completionHandler: completionHandler)
@@ -264,7 +267,7 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
     }
     
     @available(iOS, introduced: 9.0, deprecated: 10.0, message: "Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]")
-    open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, withResponseInfo responseInfo: [AnyHashable: Any], completionHandler: @escaping () -> Void) {
+    open func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, withResponseInfo responseInfo: [AnyHashable : Any], completionHandler: @escaping () -> Void) {
         
         for service in _services {
             service.application?(application, handleActionWithIdentifier: identifier, for: notification, withResponseInfo: responseInfo, completionHandler: completionHandler)
@@ -275,7 +278,7 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
      
      This method will be invoked even if the application was launched or resumed because of the remote notification. The respective delegate methods will be invoked first. Note that this behavior is in contrast to application:didReceiveRemoteNotification:, which is not called in those cases, and which will not be invoked if this method is implemented. !*/
     @available(iOS 7.0, *)
-    open func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    open func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
         var didPerformFetch : Bool = false
         let aSelector = #selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:))
@@ -335,7 +338,7 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
     }
     
     @available(iOS 8.2, *)
-    open func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable: Any]?, reply: @escaping ([AnyHashable: Any]?) -> Void) {
+    open func application(_ application: UIApplication, handleWatchKitExtensionRequest userInfo: [AnyHashable : Any]?, reply: @escaping ([AnyHashable : Any]?) -> Void) {
         
         for service in _services {
             service.application?(application, handleWatchKitExtensionRequest: userInfo, reply: reply)
@@ -469,12 +472,12 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
     @available(iOS 8.0, *)
     open func application(_ application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool {
         
+        var result = false
         for service in _services {
             guard let serviceResult = service.application?(application, willContinueUserActivityWithType: userActivityType) else { continue }
-            guard serviceResult else { continue }
-            return true
+            result = serviceResult
         }
-        return false
+        return result
     }
     
     // Called on the main thread after the NSUserActivity object is available. Use the data you stored in the NSUserActivity object to re-create what the user was doing.
@@ -484,12 +487,12 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
     @available(iOS 8.0, *)
     open func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
 
+        var result = false
         for service in _services {
             guard let serviceResult = service.application?(application, continue: userActivity, restorationHandler: restorationHandler) else { continue }
-            guard serviceResult else { continue }
-            return true
+            result = serviceResult
         }
-        return false
+        return result
     }
     
     // If the user activity cannot be fetched after willContinueUserActivityWithType is called, this will be called on the main thread when implemented.
@@ -521,6 +524,5 @@ extension AFSAppDelegateDispatcher : UIApplicationDelegate {
         for service in _services {
             service.application?(application, userDidAcceptCloudKitShareWith: cloudKitShareMetadata)
         }
-        return
     }
 }
