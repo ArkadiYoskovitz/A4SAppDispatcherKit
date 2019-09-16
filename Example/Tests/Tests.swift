@@ -1,11 +1,11 @@
 import XCTest
-@testable import A4SAppDispatcherKit
+@testable import AFSAppDispatcherKit
 
 class Tests : XCTestCase {
     
     var sut : TestAppDelegate!
 
-    class TestAppDelegate : A4SAppDelegateDispatcher {
+    class TestAppDelegate : AFSAppDelegateDispatcher {
         
         var didFinishLaunchingCalled = 0
         let service : TestService
@@ -14,27 +14,27 @@ class Tests : XCTestCase {
             didFinishLaunchingCalled = 0
             service = TestService()
         }
-        override func obtainServices() -> [A4SAppDelegateService] {
+        override func obtainServices() -> [AFSAppDelegateService] {
             return [service]
         }
         
-        override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        override func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
             didFinishLaunchingCalled += 1
             return false
         }
     }
 
-    class TestService : NSObject , A4SAppDelegateService {
+    class TestService : NSObject , AFSAppDelegateService {
     
         var willFinishLaunchingCalled : Int = 0
         var  didFinishLaunchingCalled : Int = 0
         
-        func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             willFinishLaunchingCalled += 1
             return true
         }
         
-        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
             didFinishLaunchingCalled += 1
             return false
         }

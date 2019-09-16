@@ -1,6 +1,0 @@
-framework module A4SAppDispatcherKit {
-  umbrella header "A4SAppDispatcherKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

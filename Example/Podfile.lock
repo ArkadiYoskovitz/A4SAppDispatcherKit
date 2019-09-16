@@ -1,16 +1,16 @@
 PODS:
-  - A4SAppDispatcherKit (0.1.0)
+  - AFSAppDispatcherKit (2.0.0)
 
 DEPENDENCIES:
-  - A4SAppDispatcherKit (from `../`)
+  - AFSAppDispatcherKit (from `../`)
 
 EXTERNAL SOURCES:
-  A4SAppDispatcherKit:
+  AFSAppDispatcherKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  A4SAppDispatcherKit: 6e89e6d2a3216274e7c5319e7db45f0efac4a1c8
+  AFSAppDispatcherKit: 1d868bee67bf8b5b0dddf67ddb52979b5e36fdfa
 
-PODFILE CHECKSUM: 773ab41c72ae9fe7fad1ac44066ba9eecba70d77
+PODFILE CHECKSUM: 7978b0811352f84781447e250254e902b93f8f63
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1
